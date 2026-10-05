@@ -9,6 +9,7 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.rizkie_3tia.databinding.ActivityLoginBinding
 import com.example.rizkie_3tia.databinding.ActivityMainBinding
+import com.example.rizkie_3tia.pertemuan_5.LimaActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 
@@ -58,7 +59,9 @@ class MainActivity : AppCompatActivity() {
                 .show()
         }
 
-
+        binding.btnToLima.setOnClickListener {
+            startActivity(Intent(this, LimaActivity::class.java))
+        }
 
     }
 }
