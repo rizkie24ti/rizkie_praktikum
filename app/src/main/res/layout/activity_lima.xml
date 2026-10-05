@@ -41,7 +41,6 @@
                 android:text="Buka WebView"
                 android:layout_marginBottom="16dp" />
 
-            <!-- Tambahkan konten panjang supaya bisa di-scroll -->
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
