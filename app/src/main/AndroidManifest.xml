@@ -14,7 +14,6 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Rizkie_3TIA">
 
-        <!-- [P6] Splash jadi halaman pertama (satu-satunya LAUNCHER) -->
         <activity
             android:name=".SplashScreenActivity"
             android:exported="true">
@@ -24,30 +23,27 @@
             </intent-filter>
         </activity>
 
-        <!-- [P6] LAUNCHER dihapus dari sini -->
         <activity
             android:name=".LoginActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
 
         <activity
-            android:name=".MainActivity"
+            android:name=".BaseActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Home.pertemuan_5.LimaActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
 
         <activity
-            android:name=".pertemuan_5.LimaActivity"
+            android:name=".Home.pertemuan_5.WebViewActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
 
         <activity
-            android:name=".pertemuan_5.WebViewActivity"
-            android:exported="false"
-            android:windowSoftInputMode="adjustResize" />
-
-        <!-- [P6] Activity Fragment -->
-        <activity
-            android:name=".pertemuan_6.SixthActivity"
+            android:name=".Home.pertemuan_6.SixthActivity"
             android:exported="false" />
     </application>
 </manifest>
