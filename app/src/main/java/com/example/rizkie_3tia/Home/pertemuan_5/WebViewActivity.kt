@@ -1,4 +1,4 @@
-package com.example.rizkie_3tia.pertemuan_5
+package com.example.rizkie_3tia.Home.pertemuan_5
 
 import android.os.Bundle
 import android.view.MenuItem
