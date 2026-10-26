@@ -11,6 +11,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import com.example.rizkie_3tia.Home.pertemuan_5.LimaActivity
 import com.example.rizkie_3tia.Home.pertemuan_6.SixthActivity
+import com.example.rizkie_3tia.Home.pertemuan_9.NinthActivity
 import com.example.rizkie_3tia.LoginActivity
 import com.example.rizkie_3tia.databinding.FragmentHomeBinding
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
@@ -37,7 +38,7 @@ class HomeFragment : Fragment() {
 
         val sharedPref = requireContext().getSharedPreferences("user_pref", Context.MODE_PRIVATE)
 
-        // Latihan 5.1: sapaan pengguna
+        // Sapaan pengguna
         val username = sharedPref.getString("username", "Pengguna")
         binding.tvWelcome.text = "Halo, $username"
 
@@ -67,7 +68,12 @@ class HomeFragment : Fragment() {
             startActivity(Intent(requireContext(), SixthActivity::class.java))
         }
 
-        // Logout: dialog konfirmasi, hapus SharedPreferences, kembali ke Login (bersihkan back stack)
+        // Pertemuan 9
+        binding.btnToNinth.setOnClickListener {
+            startActivity(Intent(requireContext(), NinthActivity::class.java))
+        }
+
+        // Logout: dialog konfirmasi, hapus SharedPreferences, kembali ke Login
         binding.btnLogout.setOnClickListener {
             MaterialAlertDialogBuilder(requireContext())
                 .setTitle("Logout")

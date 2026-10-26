@@ -45,5 +45,13 @@
         <activity
             android:name=".Home.pertemuan_6.SixthActivity"
             android:exported="false" />
+
+        <activity
+            android:name=".Home.pertemuan_9.NinthActivity"
+            android:exported="false" />
+
+        <activity
+            android:name=".Message.tutorial.TutorialMessageActivity"
+            android:exported="false" />
     </application>
 </manifest>
