@@ -6,7 +6,8 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home.pertemuan_9.NinthActivity">
+    tools:context=".Home.pertemuan_9.NinthActivity"
+    android:background="@drawable/uzumakie">
 
     <androidx.appcompat.widget.Toolbar
         android:id="@+id/toolbar"
