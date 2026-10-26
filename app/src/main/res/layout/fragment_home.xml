@@ -5,7 +5,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Home.HomeFragment">
+    tools:context=".Home.HomeFragment"
+    android:background="@drawable/uzumakiee">
 
     <View
         android:id="@+id/background_header"
