@@ -9,6 +9,7 @@ import android.view.ViewGroup
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
+import com.example.rizkie_3tia.Home.pertemuan_10.TenthActivity
 import com.example.rizkie_3tia.Home.pertemuan_5.LimaActivity
 import com.example.rizkie_3tia.Home.pertemuan_6.SixthActivity
 import com.example.rizkie_3tia.Home.pertemuan_9.NinthActivity
@@ -71,6 +72,11 @@ class HomeFragment : Fragment() {
         // Pertemuan 9
         binding.btnToNinth.setOnClickListener {
             startActivity(Intent(requireContext(), NinthActivity::class.java))
+        }
+
+        // Pertemuan 10
+        binding.btnToTenth.setOnClickListener {
+            startActivity(Intent(requireContext(), TenthActivity::class.java))
         }
 
         // Logout: dialog konfirmasi, hapus SharedPreferences, kembali ke Login
